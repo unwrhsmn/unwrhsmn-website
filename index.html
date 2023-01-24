@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>StARybook Website Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="logoweb2.png" class="logo"></a>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">What's New</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a storybook<br>It's <span>stARybook</span></h2>
+                <p>
+                    The stARybook is an interactive application that was specially developed for children's storybook.
+                    This application has Augmented Reality and other multimedia elements for children to explore while reading storybooks.
+                    The purpose of this application is to stimulate young children's interest in reading books and to expose them to
+                    multimedia in a young age. The user manual, e-book, and applications for the kids should be 
+                    downloaded and installed by the parents. Scan the QR Code now!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="APP.jpg" class="qrcode" />
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="APP.jpg" onclick=" imgSlider('APP.jpg')" /></li>
+            <li><img src="EB.jpg" onclick=" imgSlider('EB.jpg')"/></li>
+            <li><img src="UM.jpg" onclick=" imgSlider('UM.jpg')"/></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.qrcode').src = anything;
+        }
+    </script>
+
+
+</body>
+</html>
